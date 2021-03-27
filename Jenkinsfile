@@ -18,6 +18,12 @@ node {
 
         sh "cf staging-environment-variable-group"
     }
+    
+    stage('cf buildpacks') {
+        /* Clone repository to our workspace */
+
+        sh "cf buildpacks"
+    }
 
     stage('cf push') {
         /* This builds the app */
