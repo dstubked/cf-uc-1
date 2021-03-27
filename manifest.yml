@@ -3,5 +3,7 @@ applications:
 - name: test-php
   random-route: true
   memory: 256M
+  env:
+    APP: UAT
 #  buildpacks:
 #    - php_buildpack
